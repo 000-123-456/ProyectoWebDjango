@@ -5,7 +5,7 @@ def contacto(request):
 
    formulario_contacto=FormularioContacto()
 
-   if request.method=="POST":
+   if request.method=="post":
       formulario_contacto=FormularioContacto(data=request.post)
       if formulario_contacto.is_valid():
          nombre=request.post.get("nombre")

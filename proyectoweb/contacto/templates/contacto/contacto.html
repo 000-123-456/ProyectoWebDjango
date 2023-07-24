@@ -5,7 +5,11 @@
 
 <div class="contenedorFormulario" >
     
-    
+    {% if "valido" in request.get %}
+
+       <p style="color: white;">Registro completado correctamente</p>
+
+    {% endif %}
     
     <form action="" method="POST" style="text-align: center;">
         {% csrf_token %}
@@ -13,5 +17,7 @@
        <input type="submit" value="Enviar"  style=" width: 150px;">
 
     </form>
+
 </div>
+<p style="color: white;">{{request.post}}</p>
 {% endblock %}

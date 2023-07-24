@@ -5,13 +5,13 @@ def contacto(request):
 
    formulario_contacto=FormularioContacto()
 
-   if request.method=="post":
-      formulario_contacto=FormularioContacto(data=request.post)
+   if request.method=="POST":
+      formulario_contacto=FormularioContacto(data=request.POST)
       if formulario_contacto.is_valid():
-         nombre=request.post.get("nombre")
-         email=request.post.get("email")
-         contenido=request.post.get("contenido")
+         nombre=request.POST.get("nombre")
+         email=request.POST.get("email")
+         contenido=request.POST.get("contenido")
 
-         return redirect("/contacto/?aseptado")
+         return redirect("/contacto/?VALIDO")
       
    return render(request, "contacto/contacto.html", {'miformulario':formulario_contacto})

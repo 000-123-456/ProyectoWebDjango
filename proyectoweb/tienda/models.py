@@ -24,6 +24,8 @@ class Producto(models.Model):
     imagen=models.ImageField(upload_to='tienda', null=True, blank=True)
     Precio=models.FloatField()
     disponibilidad=models.BooleanField(default=True)
+    created=models.DateField(auto_now_add=True)
+    update=models.DateField(auto_now_add=True)
 
 
     class Meta:

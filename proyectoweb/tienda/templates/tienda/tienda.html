@@ -4,19 +4,13 @@
 {% block content %}
 
 <div class="container">
-
-   <div style="float: right;">
-   
-   <p style="color: white;"> texto de prueba</p>
-   </div>
    <div class="row">
-
 
 {% for producto in productos %}
     
     <div class="col-md-3">
 
-        <div class="card"  style="width: 75%; margin: 20px 20px;" >
+        <div class="card"  style="width: 75%; margin: 10px 10px;" >
 
            <img src="{{producto.imagen.url}}" class="card-img-top">
 
@@ -30,12 +24,8 @@
 
         </div>
        
-        <div class="card-footer text-center">
-         <a href="#" class="btn btn-success">Agregar al carro</a>
 
-       </div>
-
-    </div><!----cierre-->
+    </div>
  </div>
 
 

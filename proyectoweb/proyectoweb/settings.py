@@ -137,3 +137,6 @@ EMAIL_HOST_PASSWORD = 'pnritfqearbsivvq'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_SUBJECT_PREFIX = '[Test mail]'
+
+DEFAULT_AUTO_FIELD='django.db.models.AutoField' 
+
